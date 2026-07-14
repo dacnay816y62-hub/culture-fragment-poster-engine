@@ -1,0 +1,4 @@
+interface:
+  display_name: "Culture Fragment Poster Engine"
+  short_description: "Turn cultural fragments into premium typographic brand posters."
+  default_prompt: "Use $culture-fragment-poster-engine to turn cultural fragments into a premium typographic brand poster system."

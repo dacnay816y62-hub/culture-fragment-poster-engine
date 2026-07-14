@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.log
+node_modules/
+__pycache__/
+.env
+.gateway.env

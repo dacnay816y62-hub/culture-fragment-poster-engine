@@ -1,68 +1,147 @@
-README.md
-Culture Fragment Poster Engine
-culture-fragment-poster-engine is a Codex skill for turning fragmented cultural visual materials into traceable, modern, premium poster and brand-visual directions.
+# Culture Fragment Poster Engine
 
-It is designed for projects involving cultural image folders, traditional objects, regional visual systems, craft details, architecture fragments, fashion/editorial references, exhibition posters, luxury brand KVs, booklet covers, and social-media vertical visuals.
+一个面向 Codex 的文化视觉转译 skill，用来把零散的文化图片、摄影、传统图像、器物、纹样、非遗材料、商业参考和版式参考，整理成可追溯的素材索引、视觉基因、现代品牌视觉系统和高级海报/KV/广告/封面方向。
 
-What It Does
-This skill does not simply collage cultural images. It builds a visual translation chain:
+它的重点不是“把文化素材拼贴成海报”，而是建立一条可解释的视觉转译链：
 
-import materials -> index images -> tag and classify -> identify cultural facts
--> identify reinterpretation methods -> isolate sensitive elements
--> extract visual genes -> route the task -> generate poster direction/prompt
--> trace sources -> review typography and layout
-The goal is to make work that feels modern, restrained, and high-end while still keeping the cultural source traceable.
+```text
+材料导入 → 图片索引 → 标签分类 → 文化事实识别 → 转译方法识别
+→ 敏感元素隔离 → 视觉基因提取 → 任务路由 → 海报方向/提示词
+→ 来源追踪 → 字体与版式检查
+```
 
-Use Cases
-Turn cultural image folders into an asset index and visual system.
-Generate premium poster concepts from traditional materials.
-Create luxury brand KV, fashion, beauty, fragrance, or lifestyle campaign directions.
-Reinterpret cultural patterns, craft, architecture, scripts, objects, or local images.
-Extract visual genes such as color, texture, composition, typography, and layout rhythm.
-Build image-generation prompts for posters, covers, ads, or vertical social visuals.
-Avoid tourist-souvenir aesthetics and direct copying of sensitive cultural symbols.
-Installation
-Place the skill folder in your Codex skills directory:
+最终目标是：作品看起来现代、克制、高级，同时能看出文化来源，但不直接复制某一张源图。
 
-C:\Users\<your-user-name>\.codex\skills\culture-fragment-poster-engine
-Expected structure:
+## 适合做什么
 
+- 整理一整个文化素材文件夹，建立可追溯图片索引
+- 从传统纹样、摄影、器物、建筑、非遗、图案中提取视觉基因
+- 生成高级文化海报、展览视觉、出版物封面、社媒竖图
+- 做奢侈品、香氛、美妆、时装、生活方式品牌的文化 KV
+- 把用户喜欢的版式参考转译到新的文化材料上
+- 判断哪些宗教、文字、仪式、图像元素不能直接商用
+- 生成适合图像模型的精简提示词，而不是冗长分析表
+
+## 核心原则
+
+- **可追溯**：每个视觉判断都要能回到原始文件、来源类型和视觉角色。
+- **不混淆事实**：传统文化材料、当代商业再设计和版式参考要分开看。
+- **不直接挪用敏感元素**：未知经文、完整神像、仪式图像、宗教符号默认隔离。
+- **提取“视觉基因”而不是复制符号**：结构、比例、色彩、材料、节奏、纹理比图案本身更重要。
+- **现代高级感优先**：避免旅游纪念品感、满版传统纹样、五色平均分布和廉价国潮拼贴。
+- **字体是主视觉资产**：标题、英文、微文案、侧边注释、标签条、坐标和图像窗口都可以成为构图的一部分。
+
+## 目录结构
+
+```text
 culture-fragment-poster-engine/
-  SKILL.md
-  agents/
-    openai.yaml
-  references/
-    full-rules.md
-If you downloaded a zip package, unzip it first and make sure the folder name is exactly:
+├─ SKILL.md
+├─ agents/
+│  └─ openai.yaml
+└─ references/
+   └─ full-rules.md
+```
 
-culture-fragment-poster-engine
-How To Use
-In Codex, mention the skill by name when asking for poster or visual-system work:
+## 安装
 
-Use $culture-fragment-poster-engine to turn these cultural references into a premium poster direction.
-Example prompts:
+把整个文件夹复制到 Codex skills 目录：
 
+```text
+<CODEX_HOME>/skills/culture-fragment-poster-engine
+```
+
+常见 Windows 位置：
+
+```text
+C:\Users\<你的用户名>\.codex\skills\culture-fragment-poster-engine
+```
+
+然后在新的 Codex 任务里调用：
+
+```text
 $culture-fragment-poster-engine
-帮我把这组非遗纹样和建筑照片整理成高级品牌海报方向。
-$culture-fragment-poster-engine
-根据这些图片做一张高端展览主视觉，不要旅游纪念品风格，要更像艺术书封面。
-$culture-fragment-poster-engine
-我喜欢这个版式，但内容换成苏州园林、太湖石和当代香水广告，请重新设计视觉方向。
-Core Principles
-Cultural sources must be traceable.
-Contemporary commercial references can teach method, but should not be treated as cultural evidence.
-Sensitive materials such as scriptures, mantras, complete religious images, ritual objects, or unknown sacred text must be isolated and handled carefully.
-Visual genes should be translated into modern graphic language, not copied literally.
-Typography is a primary visual asset, not a decoration.
-Premium results should use controlled color, strong cropping, asymmetry, negative space, and clear hierarchy.
-Output Style
-For a single poster task, the skill can produce:
+```
 
-Task identification
-Selected materials
-Extracted visual genes
-One-sentence visual positioning
-Image-generation prompt
-Source trace
-Typography correction notes
-For large material intake, it can produce:
+## 使用示例
+
+### 1. 素材文件夹整理
+
+```text
+$culture-fragment-poster-engine
+帮我整理这个藏地纹样和建筑照片文件夹，建立素材索引，分出核心资产、风险资产、版式参考和可转译的视觉基因。
+```
+
+### 2. 高级品牌 KV
+
+```text
+$culture-fragment-poster-engine
+用这些织物、墙面和器物碎片，做一个高级香氛品牌 KV。不要旅游感，不要满版图案，要更像 Wallpaper* / FRAME / luxury campaign。
+```
+
+### 3. 版式参考转译
+
+```text
+$culture-fragment-poster-engine
+我喜欢这张参考的版式关系，但内容换成苏绣和现代女装。不要照抄坐标，只保留方法。
+```
+
+### 4. 直接生成提示词
+
+```text
+$culture-fragment-poster-engine
+主题：非遗木版年画 × 高级护肤广告
+直接给我一条适合图像生成的精简 prompt。
+```
+
+## 输出方式
+
+对于大型素材整理，skill 会倾向输出：
+
+- 材料概览
+- 图片/关系表
+- 核心资产
+- 转译方法和版式参考
+- 敏感与排除素材
+- 标签表
+
+对于单张海报/KV，会倾向输出：
+
+- 任务识别
+- 选用材料
+- 视觉基因
+- 一句话视觉定位
+- 图像生成 prompt
+- 来源追踪
+- 字体修正说明
+
+如果用户要求“直接生成”，分析会尽量内化，直接给出结果、提示词或生产方向。
+
+## 重要文件
+
+- `SKILL.md`  
+  主工作流：任务路由、素材索引、文化安全、品牌/KV 模式、排版策略、prompt 压缩和最终检查。
+
+- `references/full-rules.md`  
+  详细规则库：分类字段、视觉基因、颜色、藏文/宗教敏感元素、海报路线库和最终检查表。
+
+- `agents/openai.yaml`  
+  Codex UI 中展示 skill 时使用的元信息。
+
+## 与普通海报 prompt 的区别
+
+普通 prompt 常常只写“某某文化风格，高级海报，现代排版”。这个 skill 会先把文化材料拆成：
+
+- 来源类型：原始材料、传统材料、商业再设计、版式参考、未知来源
+- 可用角色：主视觉、背景、色彩参考、字体参考、纹理、构图、排除项
+- 风险等级：可自由转译、需抽象后使用、需验证含义、不能自动商用
+- 视觉基因：构图、图形结构、色彩、字体、图像、材质
+
+这样生成出来的方向更像“文化转译后的现代设计系统”，而不是“文化素材贴图”。
+
+## 注意
+
+- 本仓库不包含 API key、账号信息或图像生成额度。
+- 文化、宗教、民族文字和仪式图像有语义风险；正式商用前需要人工核验。
+- 商业参考图只能学习方法，不能当作文化事实，也不能照抄版式坐标。
+- 图像模型不擅长准确文字；中文、英文、藏文、日期、地址和品牌名应在后期排版工具里校正。
+
