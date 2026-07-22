@@ -29,7 +29,7 @@
 
 参考素材示例：
 
-![Reference material](微信图片_20260704164632.jpg)
+![Reference material](reference-material-sample.jpg)
 
 ## 适合做什么
 
@@ -69,10 +69,10 @@ culture-fragment-poster-engine/
 <CODEX_HOME>/skills/culture-fragment-poster-engine
 ```
 
-常见 Windows 位置：
+常见 Windows 位置可以使用环境变量表达：
 
 ```text
-C:\Users\<你的用户名>\.codex\skills\culture-fragment-poster-engine
+%USERPROFILE%\.codex\skills\culture-fragment-poster-engine
 ```
 
 然后在新的 Codex 任务里调用：

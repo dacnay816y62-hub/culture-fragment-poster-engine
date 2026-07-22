@@ -20,4 +20,4 @@ Real test cases created with culture-fragment-poster-engine.
 
 ## Original Reference
 
-![Reference](../微信图片_20260704164632.jpg)
+![Reference](../reference-material-sample.jpg)
