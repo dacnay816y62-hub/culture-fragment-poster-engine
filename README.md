@@ -4,7 +4,7 @@
 
 把文化素材整理成可追溯的视觉线索，再转译成品牌 KV、海报、封面与可执行提示词。
 
-**[快速开始](#start)** · **[下载与安装](#install)** · **[完整规则](SKILL.md)** · **[全部视觉 Skills](https://github.com/dacnay816y62-hub/cinema-dna-21x9x3/blob/main/docs/FANTASY-COLLECTION.md)**
+**[快速开始](#start)** · **[下载与安装](#install)** · **[完整规则](SKILL.md)** · **[全部视觉 Skills](https://github.com/dacnay816y62-hub?tab=repositories)**
 
 | 视觉示例 01 | 视觉示例 02 |
 | :---: | :---: |
@@ -177,4 +177,4 @@ $culture-fragment-poster-engine
 
 **让想象先被看见。** 将视觉判断与创作流程整理成可以继续使用的方法。
 
-**[浏览全部视觉 Skills](https://github.com/dacnay816y62-hub/cinema-dna-21x9x3/blob/main/docs/FANTASY-COLLECTION.md)** · [东方文化编辑海报](https://github.com/dacnay816y62-hub/fantasy-dongfang-jianyuehaibao) · [Chinese Poster Skill](https://github.com/dacnay816y62-hub/chinese-poster-skill)
+**[浏览全部视觉 Skills](https://github.com/dacnay816y62-hub?tab=repositories)** · [东方文化编辑海报](https://github.com/dacnay816y62-hub/fantasy-dongfang-jianyuehaibao) · [Chinese Poster Skill](https://github.com/dacnay816y62-hub/chinese-poster-skill)
