@@ -1,16 +1,45 @@
 # Culture Fragment Poster Engine
 
-一个面向 Codex 的文化视觉转译 skill，用来把零散的文化图片、摄影、传统图像、器物、纹样、非遗材料、商业参考和版式参考，整理成可追溯的素材索引、视觉基因、现代品牌视觉系统和高级海报/KV/广告/封面方向。
+**FANTASY / 梵想美学 · 文化海报与编辑设计**
 
-它的重点不是“把文化素材拼贴成海报”，而是建立一条可解释的视觉转译链：
+把文化素材整理成可追溯的视觉线索，再转译成品牌 KV、海报、封面与可执行提示词。
+
+**[快速开始](#start)** · **[下载与安装](#install)** · **[完整规则](SKILL.md)** · **[全部视觉 Skills](https://github.com/dacnay816y62-hub/cinema-dna-21x9x3/blob/main/docs/FANTASY-COLLECTION.md)**
+
+| 视觉示例 01 | 视觉示例 02 |
+| :---: | :---: |
+| ![Culture Fragment Poster Engine · 示例 1](8dc29d5b4ddb67499a005d4d0c14661.png) | ![Culture Fragment Poster Engine · 示例 2](d543426882c8a10b12ab0c484f8fc47.png) |
+
+<a id="start"></a>
+
+## 一分钟开始
+
+| 你提供 | 这套 Skill 组织的交付 |
+| --- | --- |
+| 文化图片、器物、纹样与版式参考 | 素材索引、视觉基因、设计方向与生成提示词 |
 
 ```text
-材料导入 → 图片索引 → 标签分类 → 文化事实识别 → 转译方法识别
-→ 敏感元素隔离 → 视觉基因提取 → 任务路由 → 海报方向/提示词
-→ 来源追踪 → 字体与版式检查
+用 $culture-fragment-poster-engine 整理这些织物、器物与建筑照片，为一个香氛品牌做文化 KV。先选一个可追溯的材料结构，保留来源依据，给出一个克制的主方向。
 ```
 
-最终目标是：作品看起来现代、克制、高级，同时能看出文化来源，但不直接复制某一张源图。
+**生成说明：** Skill 组织设计判断、提示词与执行流程；图片由当前环境中可用的图像工具生成或编辑。示例用于理解视觉方向，具体来源以本仓库记录为准，不能据此保证每次得到相同效果。
+
+<a id="install"></a>
+
+## 下载与安装
+
+**[下载当前分支 ZIP](https://github.com/dacnay816y62-hub/culture-fragment-poster-engine/archive/refs/heads/main.zip)** · **[阅读 Skill 规则](SKILL.md)**
+
+1. 下载并解压仓库。
+2. 将仓库根目录（包含 `SKILL.md`）放入当前助手支持的技能目录。
+3. 安装文件夹命名为 **`culture-fragment-poster-engine`**，确保入口是 `culture-fragment-poster-engine/SKILL.md`。
+4. 在支持技能调用的会话中使用 **`$culture-fragment-poster-engine`**。如果列表未刷新，新开一个任务。
+
+Codex CLI / IDE 的用户级目录是 `~/.agents/skills/`，项目级目录是 `.agents/skills/`；Windows 用户目录可写为 `%USERPROFILE%\.agents\skills\`。以 [OpenAI 官方安装说明](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills) 为准。ChatGPT 与其他宿主请按各自的技能加载方式使用。
+
+仓库名与调用名可能不同，以上以 `SKILL.md` 中的名称为准。安装不包含图像服务、账户或生成额度；实际出图取决于你使用的环境。
+
+---
 
 ## 示例图
 
@@ -59,26 +88,6 @@ culture-fragment-poster-engine/
 │  └─ openai.yaml
 └─ references/
    └─ full-rules.md
-```
-
-## 安装
-
-把整个文件夹复制到 Codex skills 目录：
-
-```text
-<CODEX_HOME>/skills/culture-fragment-poster-engine
-```
-
-常见 Windows 位置可以使用环境变量表达：
-
-```text
-%USERPROFILE%\.codex\skills\culture-fragment-poster-engine
-```
-
-然后在新的 Codex 任务里调用：
-
-```text
-$culture-fragment-poster-engine
 ```
 
 ## 使用示例
@@ -163,3 +172,9 @@ $culture-fragment-poster-engine
 - 文化、宗教、民族文字和仪式图像有语义风险；正式商用前需要人工核验。
 - 商业参考图只能学习方法，不能当作文化事实，也不能照抄版式坐标。
 - 图像模型不擅长准确文字；中文、英文、藏文、日期、地址和品牌名应在后期排版工具里校正。
+
+## FANTASY / 梵想美学
+
+**让想象先被看见。** 将视觉判断与创作流程整理成可以继续使用的方法。
+
+**[浏览全部视觉 Skills](https://github.com/dacnay816y62-hub/cinema-dna-21x9x3/blob/main/docs/FANTASY-COLLECTION.md)** · [东方文化编辑海报](https://github.com/dacnay816y62-hub/fantasy-dongfang-jianyuehaibao) · [Chinese Poster Skill](https://github.com/dacnay816y62-hub/chinese-poster-skill)
